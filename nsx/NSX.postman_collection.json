@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "f5eeb9bf-9325-5ddc-f213-1776fb6cb7ea",
+		"name": "NSX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CSM System Config",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!mgr1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/domains",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"domains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Domains",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!mgr1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/domains",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"domains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EnforcementPonts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{mgr.password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{mgr.username}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/sites/default/enforcement-points",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"sites",
+						"default",
+						"enforcement-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Tier0s",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!mgr1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/tier-0s/",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"tier-0s",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Tier1s",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!mgr1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/tier-1s/",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"tier-1s",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Segments",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!mgr1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIW1ncjE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{manager.ip}}/policy/api/v1/infra/segments",
+					"protocol": "https",
+					"host": [
+						"{{manager.ip}}"
+					],
+					"path": [
+						"policy",
+						"api",
+						"v1",
+						"infra",
+						"segments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET AWS Accounts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!csm1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIWNzbTE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{csm.ip}}/api/v1/csm/aws/accounts",
+					"protocol": "https",
+					"host": [
+						"{{csm.ip}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"csm",
+						"aws",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Azure Accounts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "VMware!csm1998",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46Vk13YXJlIWNzbTE5OTg="
+					}
+				],
+				"url": {
+					"raw": "https://{{csm.ip}}/csmapi/api/v1/csm/azure/accounts",
+					"protocol": "https",
+					"host": [
+						"{{csm.ip}}"
+					],
+					"path": [
+						"csmapi",
+						"api",
+						"v1",
+						"csm",
+						"azure",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
